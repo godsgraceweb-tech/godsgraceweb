@@ -31,7 +31,7 @@ export const siteConfig = {
         "Chairs",
         "Chair covers and tie-backs",
       ],
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop"
+      image: "/images/service-1.jpg"
     },
     {
       id: "wedding-essentials",
@@ -45,7 +45,7 @@ export const siteConfig = {
         "Food and catering coordination",
         "Costume designs",
       ],
-      image: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop"
+      image: "/images/service-2.jpg"
     },
     {
       id: "media-production",
@@ -59,7 +59,7 @@ export const siteConfig = {
         "Music system",
         "Generator support",
       ],
-      image: "https://images.unsplash.com/photo-1470229722913-7c092db62220?q=80&w=800&auto=format&fit=crop"
+      image: "/images/service-3.jpg"
     },
     {
       id: "entertainment",
@@ -72,7 +72,7 @@ export const siteConfig = {
         "Hosting girls with theme costumes",
         "Event security",
       ],
-      image: "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=800&auto=format&fit=crop"
+      image: "/images/service-4.jpg"
     },
     {
       id: "transportation",
@@ -84,7 +84,7 @@ export const siteConfig = {
         "Wedding car decoration",
         "Tourist bus arrangements",
       ],
-      image: "https://images.unsplash.com/photo-1514315609403-6f917dfa732d?q=80&w=800&auto=format&fit=crop"
+      image: "/images/service-5.jpg"
     }
   ],
   process: [

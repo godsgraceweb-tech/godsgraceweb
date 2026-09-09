@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 export default function FinalCTA() {
   return (
     <section className="relative py-32 bg-charcoal overflow-hidden flex items-center justify-center min-h-[70vh]">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1530103862676-de8892ebe6bd?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 mix-blend-overlay" />
+      <div className="absolute inset-0 bg-[url('/images/cta-bg.jpg')] bg-cover bg-center opacity-30 mix-blend-overlay" />
       
       <div className="container relative z-10 mx-auto px-6 text-center text-ivory">
         <motion.div

@@ -9,7 +9,7 @@ export default function Kerala() {
     <section className="relative py-32 md:py-48 bg-kerala-green overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-[url('/images/kerala-bg.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay" />
         <div className="absolute inset-0 bg-gradient-to-t from-kerala-green via-kerala-green/90 to-transparent" />
       </div>
 

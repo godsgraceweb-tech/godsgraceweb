@@ -6,12 +6,12 @@ import FinalCTA from "@/components/sections/FinalCTA";
 
 // Placeholder gallery images
 const galleryImages = [
-  { id: 1, category: "Weddings", src: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-2 md:row-span-2" },
-  { id: 2, category: "Décor", src: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-1 md:row-span-1" },
-  { id: 3, category: "Details", src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-1 md:row-span-1" },
-  { id: 4, category: "Events", src: "https://images.unsplash.com/photo-1505236858219-8359eb29e325?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-1 md:row-span-2" },
-  { id: 5, category: "Weddings", src: "https://images.unsplash.com/photo-1583939000240-69649751e360?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-1 md:row-span-1" },
-  { id: 6, category: "Celebrations", src: "https://images.unsplash.com/photo-1530103862676-de8892ebe6bd?q=80&w=1000&auto=format&fit=crop", span: "md:col-span-2 md:row-span-1" },
+  { id: 1, category: "Weddings", src: "/images/gallery-1.jpg", span: "md:col-span-2 md:row-span-2" },
+  { id: 2, category: "Décor", src: "/images/gallery-2.jpg", span: "md:col-span-1 md:row-span-1" },
+  { id: 3, category: "Details", src: "/images/gallery-3.jpg", span: "md:col-span-1 md:row-span-1" },
+  { id: 4, category: "Events", src: "/images/gallery-4.jpg", span: "md:col-span-1 md:row-span-2" },
+  { id: 5, category: "Weddings", src: "/images/gallery-5.jpg", span: "md:col-span-1 md:row-span-1" },
+  { id: 6, category: "Celebrations", src: "/images/gallery-6.jpg", span: "md:col-span-2 md:row-span-1" },
 ];
 
 export default function GalleryPage() {
