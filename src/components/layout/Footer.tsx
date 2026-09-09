@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex flex-col items-start">
             <img 
-              src="/logo.jpg" 
+              src="/logo-transparent.png" 
               alt="God's Grace Logo" 
-              className="h-16 w-auto object-contain mb-6 rounded-sm"
+              className="h-20 w-auto object-contain mb-8 invert brightness-0 opacity-90"
             />
             <p className="font-heading italic text-xl text-champagne max-w-xs mb-6">
               Beautifully Planned. Gracefully Celebrated.

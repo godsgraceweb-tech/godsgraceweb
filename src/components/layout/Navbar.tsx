@@ -61,11 +61,11 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="group relative z-50 flex items-center">
           <img 
-            src="/logo.jpg" 
+            src="/logo-transparent.png" 
             alt="God's Grace Logo" 
             className={cn(
-              "h-12 w-auto object-contain transition-all duration-300 rounded-sm shadow-sm",
-              (isScrolled || !isHome || mobileMenuOpen) ? "opacity-100" : "opacity-90"
+              "h-16 md:h-20 w-auto object-contain transition-all duration-300",
+              (isScrolled || !isHome || mobileMenuOpen) ? "opacity-100" : "opacity-90 invert brightness-0"
             )}
           />
         </Link>
