@@ -3,6 +3,13 @@
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
 import FinalCTA from "@/components/sections/FinalCTA";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Event Gallery & Portfolio",
+  description: "Browse our portfolio of beautifully planned luxury weddings and gracefully celebrated events in Thiruvalla, Kerala.",
+  alternates: { canonical: `${siteConfig.url}/gallery` }
+};
 
 // Placeholder gallery images
 const galleryImages = [

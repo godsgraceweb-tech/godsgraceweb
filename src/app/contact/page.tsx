@@ -1,10 +1,12 @@
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: `Contact Us | ${siteConfig.name}`,
-  description: "Get in touch with God's Grace Wedding & Event Planners in Thiruvalla, Kerala.",
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with God's Grace Event Planners in Thiruvalla, Kerala. Call us, WhatsApp, or visit our office to start planning your luxury celebration.",
+  alternates: { canonical: `${siteConfig.url}/contact` }
 };
 
 export default function ContactPage() {

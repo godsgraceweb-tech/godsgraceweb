@@ -1,9 +1,11 @@
 import About from "@/components/sections/About";
 import { siteConfig } from "@/config/site";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: `About Us | ${siteConfig.name}`,
-  description: "Learn about the God's Grace Experience and our mission to create moments that stay forever.",
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn about God's Grace Experience, our values, and our commitment to crafting unforgettable luxury weddings and events in Kerala.",
+  alternates: { canonical: `${siteConfig.url}/about` }
 };
 
 export default function AboutPage() {

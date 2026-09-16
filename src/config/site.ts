@@ -4,6 +4,7 @@ export const siteConfig = {
   tagline: "Beautifully Planned. Gracefully Celebrated.",
   location: "Thiruvalla, Kerala",
   description: "God's Grace Wedding & Event Planners is a complete event planning and coordination company based in Thiruvalla, Kerala.",
+  url: "https://godsgraceplanners.com",
   contact: {
     phones: ["+91 95620 44986", "+91 79074 14337"],
     whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919562044986",

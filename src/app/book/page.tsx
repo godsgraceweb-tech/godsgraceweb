@@ -1,10 +1,12 @@
 import { Suspense } from "react";
-import BookingWizard from "@/components/sections/BookingWizard";
 import { siteConfig } from "@/config/site";
+import BookingWizard from "@/components/sections/BookingWizard";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: `Book Your Event | ${siteConfig.name}`,
-  description: "Start planning your celebration with God's Grace. Tell us about your vision and event details.",
+export const metadata: Metadata = {
+  title: "Book Your Event",
+  description: "Start planning your dream wedding or luxury event with God's Grace. Tell us about your vision, and we'll create an unforgettable experience.",
+  alternates: { canonical: `${siteConfig.url}/book` }
 };
 
 export default function BookPage() {
