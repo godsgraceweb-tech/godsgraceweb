@@ -1,25 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 
+const heroImages = [
+  "/images/hero-slide-1.jpg",
+  "/images/hero-slide-2.jpg",
+  "/images/hero-slide-3.jpg",
+  "/images/hero-slide-4.jpg",
+];
+
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 6000); // Change image every 6 seconds
+    
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0 bg-charcoal"
-      >
-        <motion.div
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 10, ease: "easeOut" }}
-          className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-60 mix-blend-overlay"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/80" />
+      {/* Background Image Slider */}
+      <div className="absolute inset-0 z-0 bg-charcoal">
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={currentImageIndex}
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 0.6, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat mix-blend-overlay"
+            style={{ backgroundImage: `url('${heroImages[currentImageIndex]}')` }}
+          />
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-transparent to-charcoal/80 z-10" />
       </div>
 
       <div className="container relative z-10 px-6 text-center text-ivory flex flex-col items-center">
