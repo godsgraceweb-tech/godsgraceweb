@@ -19,6 +19,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: `${siteConfig.name} | Premium Wedding & Event Planners in ${siteConfig.location}`,
     template: `%s | ${siteConfig.name}`,
